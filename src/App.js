@@ -12,8 +12,6 @@ const App = () => {
         positions: new Array(9).fill(null),
     });
 
-    console.log("prevData", data);
-
     return (
         <>
             <Grid
@@ -21,6 +19,8 @@ const App = () => {
                 positions={data.positions}
                 setpositions={(index) => {
                     setdata((predata) => {
+                        console.log('expected second index', index);
+                        console.log("expected second index", predata);
                         if (!predata.positions[index] && !predata.winner.name) {
                             const data = { ...predata };
                             data.positions[index] = data.turn;

@@ -14,11 +14,10 @@ const renderSVG = (svg) => {
 };
 
 const Grid = (props) => {
-
     const divisions = props.positions.map((value, index) => {
         const isWinningIndex = props.winningIndexs.includes(index);
         return(
-            <div 
+            <div
                 className = {isWinningIndex ? styles.winner : null}
                 key = {index}
                 onClick={() => {
