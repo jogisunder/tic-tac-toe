@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid: 85px 85px 85px/85px 85px 85px;
+    gap: 2px;
+    margin: 50px auto;
+    width: calc(3 * 85pa + 2 * 5pa);
+    height: calc(3 * 85pa + 2 * 5pa);
+    justify-content: center;
+}
+
+.container > div {
+    display: flex;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+.winner {
+    background-color: red !important;
+}
